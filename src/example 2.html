@@ -1,0 +1,397 @@
+<?php
+	require_once('Global_Resources/includes/php_includes.php');
+?>
+<!doctype html>
+<html id="html">
+<head>
+<title>uicTable</title>
+
+<meta http-equiv="Content-Language" content="de">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<?php
+// 	echo getCSS();
+?>
+
+<style type="text/css">
+<!--
+	body {margin:0px; padding:0px;}
+
+	table {
+		border-spacing: 0;
+		width:100%;
+	}
+
+	thead th {
+		background: rgba(230, 230, 230, 1.0);
+		padding: 6px 25px;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+/* 		box-shadow:0px 2px 3px rgba(0, 0, 0, 0.2); */
+		color: #333;
+		box-shadow:2px 4px 4px rgba(0, 0, 0, 0.25);
+		font-size:18px;
+		line-height:40px;
+	}
+
+	th + th {
+		border-left:1px solid #fff;
+	}
+
+	td + td {
+		border-left:1px solid #eee;
+	}
+
+	td, th {
+		border-bottom:1px solid #eee;
+		padding: 4px 25px;
+		text-align:left;
+		color: #555;
+		font-family:helvetica;
+		font-size:12px;
+	}
+-->
+</style>
+
+
+<script src="dependencies/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="sourceCode/jquery.uic-table.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+	$('table:eq(0)').uicTable({
+		additionalCSS: [
+			'box-shadow',
+
+			'borderTopWidth',
+			'borderTopColor',
+			'borderTopStyle',
+			'borderRightWidth',
+			'borderRightColor',
+			'borderRightStyle',
+			'borderBottomWidth',
+			'borderBottomColor',
+			'borderBottomStyle',
+// 			'border',
+// 			'borderLeft',
+			'borderLeftWidth',
+			'borderLeftColor',
+			'borderLeftStyle',
+		]
+	})
+});
+-->
+</script>
+
+</head>
+
+<body>
+			<table>
+				<thead>
+					<tr>
+						<th>Route-Id</th>
+						<th>Path</th>
+						<th>Controller</th>
+						<th>Schemes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>_assetic_aaeafdc</td>
+						<td>/Global_Resources/css/main.css</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_aaeafdc_0</td>
+						<td>/Global_Resources/css/main_part_1_flags_1.css</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_aaeafdc_1</td>
+						<td>/Global_Resources/css/main_part_1_main_2.css</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_01565f8</td>
+						<td>/Global_Resources/js/jquery.uic-form3.js</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_01565f8_0</td>
+						<td>/Global_Resources/js/jquery.uic-form3_jquery.uic-form3_1.js</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_51709ad</td>
+						<td>/Global_Resources/js/jquery.uicSplitview.js</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_51709ad_0</td>
+						<td>/Global_Resources/js/jquery.uicSplitview_jquery.uicSplitview_1.js</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_9359d0c</td>
+						<td>/Global_Resources/js/global.js</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_assetic_9359d0c_0</td>
+						<td>/Global_Resources/js/global_global_1.js</td>
+						<td>assetic.controller:render</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_wdt</td>
+						<td>/_wdt/{token}</td>
+						<td>web_profiler.controller.profiler:toolbarAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_home</td>
+						<td>/_profiler/</td>
+						<td>web_profiler.controller.profiler:homeAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_search</td>
+						<td>/_profiler/search</td>
+						<td>web_profiler.controller.profiler:searchAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_search_bar</td>
+						<td>/_profiler/search_bar</td>
+						<td>web_profiler.controller.profiler:searchBarAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_purge</td>
+						<td>/_profiler/purge</td>
+						<td>web_profiler.controller.profiler:purgeAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_info</td>
+						<td>/_profiler/info/{about}</td>
+						<td>web_profiler.controller.profiler:infoAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_import</td>
+						<td>/_profiler/import</td>
+						<td>web_profiler.controller.profiler:importAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_export</td>
+						<td>/_profiler/export/{token}.txt</td>
+						<td>web_profiler.controller.profiler:exportAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_phpinfo</td>
+						<td>/_profiler/phpinfo</td>
+						<td>web_profiler.controller.profiler:phpinfoAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_search_results</td>
+						<td>/_profiler/{token}/search/results</td>
+						<td>web_profiler.controller.profiler:searchResultsAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler</td>
+						<td>/_profiler/{token}</td>
+						<td>web_profiler.controller.profiler:panelAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_router</td>
+						<td>/_profiler/{token}/router</td>
+						<td>web_profiler.controller.router:panelAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_exception</td>
+						<td>/_profiler/{token}/exception</td>
+						<td>web_profiler.controller.exception:showAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_profiler_exception_css</td>
+						<td>/_profiler/{token}/exception.css</td>
+						<td>web_profiler.controller.exception:cssAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_configurator_home</td>
+						<td>/_configurator/</td>
+						<td>Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::checkAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_configurator_step</td>
+						<td>/_configurator/step/{index}</td>
+						<td>Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::stepAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_configurator_final</td>
+						<td>/_configurator/final</td>
+						<td>Sensio\Bundle\DistributionBundle\Controller\ConfiguratorController::finalAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_67</td>
+						<td>/{_locale}/ypconfig/home</td>
+						<td>YP\ServiceBundle\Controller\DefaultController::indexAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_70</td>
+						<td>/{_locale}/ypconfig/settings</td>
+						<td>YP\ServiceBundle\Controller\DefaultController::settingsAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_68</td>
+						<td>/{_locale}/ypconfig/routes</td>
+						<td>YP\ServiceBundle\Controller\RoutingController::indexAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_75</td>
+						<td>/{_locale}/ypconfig/routes/list</td>
+						<td>YP\ServiceBundle\Controller\RoutingController::listAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_74</td>
+						<td>/{_locale}/ypconfig/routes/sitemap</td>
+						<td>YP\ServiceBundle\Controller\RoutingController::sitemapAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_78</td>
+						<td>/{_locale}/ypconfig/tasks/transgen</td>
+						<td>YP\ServiceBundle\Controller\TaskController::generateTranslationFilesAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_76</td>
+						<td>/{_locale}/ypconfig/tasks</td>
+						<td>YP\ServiceBundle\Controller\TaskController::indexAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_77</td>
+						<td>/{_locale}/ypconfig/tasks/{task}</td>
+						<td>YP\ServiceBundle\Controller\TaskController::performTaskAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_79</td>
+						<td>/{_locale}/ypconfig/translations/manage_identifier</td>
+						<td>YP\ServiceBundle\Controller\TranslationController::manageIdentifierAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_73</td>
+						<td>/{_locale}/ypconfig/translations/manage_translation</td>
+						<td>YP\ServiceBundle\Controller\TranslationController::manageTranslationAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>route_69</td>
+						<td>/{_locale}/ypconfig/translations</td>
+						<td>YP\ServiceBundle\Controller\TranslationController::showTranslationsAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_welcome</td>
+						<td>/</td>
+						<td>Acme\DemoBundle\Controller\WelcomeController::indexAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo_login</td>
+						<td>/demo/secured/login</td>
+						<td>Acme\DemoBundle\Controller\SecuredController::loginAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_security_check</td>
+						<td>/demo/secured/login_check</td>
+						<td>Acme\DemoBundle\Controller\SecuredController::securityCheckAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo_logout</td>
+						<td>/demo/secured/logout</td>
+						<td>Acme\DemoBundle\Controller\SecuredController::logoutAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>acme_demo_secured_hello</td>
+						<td>/demo/secured/hello</td>
+						<td>Acme\DemoBundle\Controller\SecuredController::helloAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo_secured_hello</td>
+						<td>/demo/secured/hello/{name}</td>
+						<td>Acme\DemoBundle\Controller\SecuredController::helloAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo_secured_hello_admin</td>
+						<td>/demo/secured/hello/admin/{name}</td>
+						<td>Acme\DemoBundle\Controller\SecuredController::helloadminAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo</td>
+						<td>/demo/</td>
+						<td>Acme\DemoBundle\Controller\DemoController::indexAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo_hello</td>
+						<td>/demo/hello/{name}</td>
+						<td>Acme\DemoBundle\Controller\DemoController::helloAction</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>_demo_contact</td>
+						<td>/demo/contact</td>
+						<td>Acme\DemoBundle\Controller\DemoController::contactAction</td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>20</td>
+						<td>900</td>
+						<td>2034</td>
+						<td></td>
+					</tr>
+				<tfoot>
+			</table>			
+</body>
+
+</html>
