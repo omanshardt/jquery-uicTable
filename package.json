@@ -1,7 +1,7 @@
 {
   "name": "jquery.uicTable",
   "version": "1.0.0",
-  "description": "uicTable makes the table stay in a static position if the table content is scrolled.",
+  "description": "uicTable makes the table header stay in a static position if the table content is scrolled.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/omanshardt/jquery-uicTable.git"
