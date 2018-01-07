@@ -1,7 +1,8 @@
 module.exports = function(grunt) {
-
+  var pkg = grunt.file.readJSON('package.json');
   // Project configuration.
   grunt.initConfig({
+	pkg : pkg,
     clean: {
       dev: {
         src: [ 'dev/*' ]
@@ -28,6 +29,7 @@ module.exports = function(grunt) {
       build: {
         options: {
 //           mangle: false
+			banner : '/**\r * <%= pkg.name %> <%= pkg.version %>\r * Release date: <%= grunt.template.today("yyyy-mm-dd") %>\r */\r\r'
         },
         cwd: 'src',
         src: [ 'sourceCode/*.js' ],
